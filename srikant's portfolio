@@ -1,0 +1,409 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Srikant | Video Editor</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #080b12;
+  color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  width: 88%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #a78bfa;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 22px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #a78bfa;
+}
+
+.hero {
+  min-height: 570px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+.tag {
+  color: #a78bfa;
+  letter-spacing: 3px;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: clamp(42px, 7vw, 75px);
+  line-height: 1.1;
+  max-width: 850px;
+}
+
+.hero h1 span {
+  color: #a78bfa;
+}
+
+.hero p {
+  color: #a5a5b2;
+  max-width: 600px;
+  margin: 25px 0;
+  font-size: 17px;
+}
+
+.btn {
+  display: inline-block;
+  background: #8b5cf6;
+  color: white;
+  padding: 13px 25px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.btn:hover {
+  background: #7042d8;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #8b5cf6;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.section-title {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  color: #9999a8;
+  margin-bottom: 35px;
+}
+
+.about-box, .project, .skill {
+  background: #111623;
+  border: 1px solid #242b3b;
+  border-radius: 12px;
+  padding: 25px;
+}
+
+.about-box p {
+  color: #b0b2c0;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.stat strong {
+  display: block;
+  color: #a78bfa;
+  font-size: 27px;
+}
+
+.stat span {
+  color: #9999a8;
+  font-size: 13px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.project {
+  text-align: center;
+}
+
+.project-icon {
+  background: #25203d;
+  border-radius: 9px;
+  padding: 40px 10px;
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+.project p {
+  color: #9999a8;
+  font-size: 14px;
+  margin: 10px 0 18px;
+}
+
+.project a {
+  color: #b49aff;
+  text-decoration: none;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.skill {
+  color: #d8c9ff;
+  text-align: center;
+  font-weight: bold;
+}
+
+.contact-box {
+  background: linear-gradient(135deg, #21183c, #111623);
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.contact-box p {
+  color: #b0b2c0;
+  margin: 15px 0 25px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #777;
+  border-top: 1px solid #242b3b;
+}
+
+@media(max-width: 700px) {
+  nav {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  nav a {
+    margin: 0 7px;
+    font-size: 12px;
+  }
+
+  .projects, .skills {
+    grid-template-columns: 1fr;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: 450px;
+  }
+
+  .section-title {
+    font-size: 29px;
+  }
+
+  .contact-box {
+    padding: 25px 15px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<nav>
+  <div class="logo">SRIKANT.</div>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="hero" id="home">
+  <div class="tag">VIDEO EDITOR & CREATIVE STORYTELLER</div>
+
+  <h1>
+    Turning Ideas Into
+    <span>Visual Stories.</span>
+  </h1>
+
+  <p>
+    Hello, I'm Srikant, a passionate video editor from Odisha
+    with 3 years of experience. I create engaging videos
+    that capture attention and bring ideas to life.
+  </p>
+
+  <div>
+    <a href="#work" class="btn">Explore My Work ↗</a>
+    <a href="#contact" class="btn btn-outline">Contact Me</a>
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="section-title">About Me.</h2>
+  <p class="subtitle">A little introduction about myself.</p>
+
+  <div class="about-box">
+    <p>
+      My name is Srikant, and I'm from Odisha, India.
+      I'm currently a Computer Science student and a
+      passionate video editor with 3 years of experience.
+      I currently work with a coaching institute, creating
+      and editing educational content.
+
+      I enjoy transforming raw footage into engaging,
+      professional and visually appealing videos.
+      My goal is to create content that tells a story
+      and connects with its audience.
+    </p>
+
+    <div class="stats">
+      <div class="stat">
+        <strong>3+</strong>
+        <span>Years Experience</span>
+      </div>
+
+      <div class="stat">
+        <strong>Video</strong>
+        <span>Editing & Creation</span>
+      </div>
+
+      <div class="stat">
+        <strong>100%</strong>
+        <span>Creative Passion</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <h2 class="section-title">My Creative Work.</h2>
+  <p class="subtitle">
+    A selection of my video editing projects.
+  </p>
+
+  <div class="projects">
+
+    <div class="project">
+      <div class="project-icon">▶</div>
+      <h3>Educational Videos</h3>
+      <p>Engaging educational and coaching content.</p>
+      <a href="https://wa.me/918917321527">
+        Ask for Project ↗
+      </a>
+    </div>
+
+    <div class="project">
+      <div class="project-icon">🎬</div>
+      <h3>Creative Reels</h3>
+      <p>Short-form videos, fast cuts and transitions.</p>
+      <a href="https://wa.me/918917321527">
+        Ask for Project ↗
+      </a>
+    </div>
+
+    <div class="project">
+      <div class="project-icon">✨</div>
+      <h3>Motion & Effects</h3>
+      <p>Creative effects, animation and visual storytelling.</p>
+      <a href="https://wa.me/918917321527">
+        Ask for Project ↗
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="section-title">My Skills.</h2>
+  <p class="subtitle">What I bring to every project.</p>
+
+  <div class="skills">
+    <div class="skill">Video Editing</div>
+    <div class="skill">Motion Graphics</div>
+    <div class="skill">Color Grading</div>
+    <div class="skill">Sound Design</div>
+    <div class="skill">Transitions & Effects</div>
+    <div class="skill">Storytelling</div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contact-box">
+    <h2 class="section-title">Let's Work Together.</h2>
+
+    <p>
+      Have a project in mind? Let's create something
+      amazing together. Feel free to contact me.
+    </p>
+
+    <div class="contact-links">
+      <a class="btn"
+         href="https://wa.me/918917321527"
+         target="_blank">WhatsApp Me</a>
+
+      <a class="btn btn-outline"
+         href="mailto:bylsrikant@gmail.com">
+         Send Email
+      </a>
+    </div>
+
+    <p>
+      Phone: 8917321527<br>
+      Email: bylsrikant@gmail.com<br>
+      Location: Odisha, India
+    </p>
+  </div>
+</section>
+
+</div>
+
+<footer>
+  © 2026 Srikant. All Rights Reserved.
+  <br>Designed with creativity.
+</footer>
+
+</body>
+</html>
